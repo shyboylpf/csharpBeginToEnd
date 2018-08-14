@@ -11,7 +11,7 @@ namespace Ch06Ex07
             person.Name = "Jack";
             person.Age = 20;
             person.ShowInfo();
-            Teacher t1 = new Teacher();
+            //Teacher t1 = new Teacher();
             Console.WriteLine("Hello World!");
         }
     }
