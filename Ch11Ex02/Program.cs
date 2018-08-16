@@ -9,7 +9,7 @@ namespace Ch11Ex02
         static void Main(string[] args)
         {
             Console.WriteLine("\nReflection.MemberInfo");
-            Type MyType = Type.GetType("System.IO.File");
+            Type MyType = Type.GetType("System.Reflection.FieldInfo");
             MemberInfo[] Mymemberinfoarray = MyType.GetMembers();
             Console.WriteLine("\nThere are {0} members in {1}.",
                 Mymemberinfoarray.Length, MyType.FullName);
