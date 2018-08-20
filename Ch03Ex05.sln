@@ -129,11 +129,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch11Ex03", "Ch11Ex03\Ch11Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch11Ex04", "Ch11Ex04\Ch11Ex04.csproj", "{0A033E5C-3068-47FB-8BF2-A2A3B55A89E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{7216EA9B-8118-40B7-9E2E-94082045E653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndThread00", "ConsoleApp2\ProcessAndThread00.csproj", "{7216EA9B-8118-40B7-9E2E-94082045E653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAndThread", "ProcessAndThread\ProcessAndThread.csproj", "{264A6473-0D5B-4088-88FE-538BBF913A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndThread01", "ProcessAndThread\ProcessAndThread01.csproj", "{264A6473-0D5B-4088-88FE-538BBF913A32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAndTread02", "ProcessAndTread02\ProcessAndTread02.csproj", "{0F5298A1-37FB-4564-85B8-4202960E7618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndTread02", "ProcessAndTread02\ProcessAndTread02.csproj", "{0F5298A1-37FB-4564-85B8-4202960E7618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
