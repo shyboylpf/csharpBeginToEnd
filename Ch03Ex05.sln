@@ -133,7 +133,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndThread00", "Conso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndThread01", "ProcessAndThread\ProcessAndThread01.csproj", "{264A6473-0D5B-4088-88FE-538BBF913A32}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndTread02", "ProcessAndTread02\ProcessAndTread02.csproj", "{0F5298A1-37FB-4564-85B8-4202960E7618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessAndThread02", "ProcessAndTread02\ProcessAndThread02.csproj", "{0F5298A1-37FB-4564-85B8-4202960E7618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAndThread03", "ProcessAndThread03\ProcessAndThread03.csproj", "{D2E7E3BF-1E56-4968-B404-617036DC3F88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -405,6 +407,10 @@ Global
 		{0F5298A1-37FB-4564-85B8-4202960E7618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F5298A1-37FB-4564-85B8-4202960E7618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F5298A1-37FB-4564-85B8-4202960E7618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E7E3BF-1E56-4968-B404-617036DC3F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E7E3BF-1E56-4968-B404-617036DC3F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E7E3BF-1E56-4968-B404-617036DC3F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E7E3BF-1E56-4968-B404-617036DC3F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
