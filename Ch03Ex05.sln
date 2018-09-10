@@ -151,6 +151,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ref", "ref\ref.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketExample", "SocketExample\SocketExample.csproj", "{D3D5DD83-2A3C-491A-905E-AA8E4B09995E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket同步server", "Socket同步server\Socket同步server.csproj", "{51561719-AA1B-4EAF-B57F-CF594381EE27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -453,6 +455,10 @@ Global
 		{D3D5DD83-2A3C-491A-905E-AA8E4B09995E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D5DD83-2A3C-491A-905E-AA8E4B09995E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D5DD83-2A3C-491A-905E-AA8E4B09995E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51561719-AA1B-4EAF-B57F-CF594381EE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51561719-AA1B-4EAF-B57F-CF594381EE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51561719-AA1B-4EAF-B57F-CF594381EE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51561719-AA1B-4EAF-B57F-CF594381EE27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
