@@ -10,6 +10,8 @@ namespace SocketExample
 {
     class Program
     {
+        private static object connectDone;
+
         static void Main(string[] args)
         {
             Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -43,6 +45,25 @@ namespace SocketExample
 
             s.Shutdown(SocketShutdown.Both);
             s.Close();
+        }
+        public static void Connect(EndPoint remoteEP, Socket client)
+        {
+            client.BeginConnect(remoteEP, new AsyncCallback(ConnectCallback), client);
+            connectDone.WaitOne();
+        }
+
+        private static void ConnectCallback(IAsyncResult ar)
+        {
+            try
+            {
+                Socket client = (Socket)ar.AsyncState;
+                client.EndConnect(ar);
+                Console.WriteLine("Socket connected to {0}", client.RemoteEndPoint.ToString());
+                connectDone.Set();
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
     }
 }
