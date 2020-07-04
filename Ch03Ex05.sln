@@ -163,7 +163,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "socket异步服务端", "so
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redis-client", "redis-client\redis-client.csproj", "{4F0FAAE1-3BDA-40B2-BCDF-0F41748487B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciGenerator", "FibonacciGenerator\FibonacciGenerator.csproj", "{5969E46D-77EE-4466-8101-7D18106F9198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciGenerator", "FibonacciGenerator\FibonacciGenerator.csproj", "{5969E46D-77EE-4466-8101-7D18106F9198}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeZoneInfoTest", "TimeZoneInfoTest\TimeZoneInfoTest.csproj", "{9207A335-6E4F-4860-9048-6613D5B19B08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConcurrentDictionaryTest", "ConcurrentDictionaryTest\ConcurrentDictionaryTest.csproj", "{8E5C8856-7E1F-4E83-97A2-F89D162FE65F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumTest", "EnumTest\EnumTest.csproj", "{F7A59D3C-936B-4EFB-A909-D3AB883B4DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumFlagTest", "EnumFlagTest\EnumFlagTest.csproj", "{91A49FF0-6B56-4C71-8049-0C60CA73040E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -495,6 +503,22 @@ Global
 		{5969E46D-77EE-4466-8101-7D18106F9198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5969E46D-77EE-4466-8101-7D18106F9198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5969E46D-77EE-4466-8101-7D18106F9198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9207A335-6E4F-4860-9048-6613D5B19B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9207A335-6E4F-4860-9048-6613D5B19B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9207A335-6E4F-4860-9048-6613D5B19B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9207A335-6E4F-4860-9048-6613D5B19B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5C8856-7E1F-4E83-97A2-F89D162FE65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5C8856-7E1F-4E83-97A2-F89D162FE65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5C8856-7E1F-4E83-97A2-F89D162FE65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5C8856-7E1F-4E83-97A2-F89D162FE65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A59D3C-936B-4EFB-A909-D3AB883B4DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A59D3C-936B-4EFB-A909-D3AB883B4DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A59D3C-936B-4EFB-A909-D3AB883B4DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A59D3C-936B-4EFB-A909-D3AB883B4DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A49FF0-6B56-4C71-8049-0C60CA73040E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A49FF0-6B56-4C71-8049-0C60CA73040E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A49FF0-6B56-4C71-8049-0C60CA73040E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A49FF0-6B56-4C71-8049-0C60CA73040E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
