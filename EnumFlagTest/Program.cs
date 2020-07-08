@@ -39,6 +39,9 @@ namespace EnumFlagTest
             Console.WriteLine(a);
             // Output:
             // Monday, Wednesday, Saturday
+
+            Console.WriteLine((Days)127);
+            Console.Write(Convert.ToString(127, 2));
         }
     }
 }
