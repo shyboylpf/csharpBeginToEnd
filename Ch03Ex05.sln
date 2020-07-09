@@ -175,13 +175,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumFlagTest", "EnumFlagTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeTest", "DateTimeTest\DateTimeTest.csproj", "{E8044E2A-450B-4BCB-9565-DDF7F604225B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientTest", "HttpClientTest\HttpClientTest.csproj", "{73CB25B0-05A3-4001-80CB-B3AEE1DAC34D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientTest", "HttpClientTest\HttpClientTest.csproj", "{73CB25B0-05A3-4001-80CB-B3AEE1DAC34D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "字段反射Test", "字段反射Test\字段反射Test.csproj", "{8E8C8882-2188-4CED-A6C6-BB7CB384964E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "字段反射Test", "字段反射Test\字段反射Test.csproj", "{8E8C8882-2188-4CED-A6C6-BB7CB384964E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSpanTest", "TimeSpanTest\TimeSpanTest.csproj", "{434CF970-9878-4D49-B5C7-778C3A03EEF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeSpanTest", "TimeSpanTest\TimeSpanTest.csproj", "{434CF970-9878-4D49-B5C7-778C3A03EEF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumFlagTest2", "EnumFlagTest2\EnumFlagTest2.csproj", "{FF906926-08D3-4D08-857B-59FC2F9F64FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumFlagTest2", "EnumFlagTest2\EnumFlagTest2.csproj", "{FF906926-08D3-4D08-857B-59FC2F9F64FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogLevelTest", "SerilogLevelTest\SerilogLevelTest.csproj", "{616D423E-EC7D-40D6-A93E-DF4FD3811F3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -549,6 +551,10 @@ Global
 		{FF906926-08D3-4D08-857B-59FC2F9F64FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF906926-08D3-4D08-857B-59FC2F9F64FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF906926-08D3-4D08-857B-59FC2F9F64FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616D423E-EC7D-40D6-A93E-DF4FD3811F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616D423E-EC7D-40D6-A93E-DF4FD3811F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616D423E-EC7D-40D6-A93E-DF4FD3811F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616D423E-EC7D-40D6-A93E-DF4FD3811F3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
