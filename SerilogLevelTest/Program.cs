@@ -19,7 +19,18 @@ namespace SerilogLevelTest
             Log.Error("Error");
             Log.Fatal("Fatal");
 
-            Console.WriteLine("Hello World!");
+            Log.Information("Processed {@Position} in {@Elapsed} ms.", new { a = 1, b = 2 }, 3);
+
+            Log.Information("{@a}", new { b = 3 });
+
+            try
+            {
+                throw new NullReferenceException();
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "错误提示");
+            }
         }
     }
 }
