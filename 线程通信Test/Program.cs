@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace 线程通信Test
 {
@@ -42,49 +43,74 @@ namespace 线程通信Test
                             Console.WriteLine("线程ID: " + Thread.CurrentThread.ManagedThreadId + " waiting");
                         }
                     }
-                    Console.WriteLine($"value: {model}, queueCount: {queue.Count}");
-                    Thread.Sleep(2000);
+                    //Task.Run(() =>
+                    //{
+                    //    Thread.Sleep(2000);
+                    //    Console.WriteLine($"value: {model}, queueCount: {queue.Count}, ThreadID: {Thread.CurrentThread.ManagedThreadId}");
+                    //});
+                    //Task.Run(async () => { await VAsync(model); });
+                    //VAsync(model);
+
+                    //Console.WriteLine(i);
+                    //Console.WriteLine($"value: {i.GetAwaiter().GetResult()}, queueCount: {queue.Count}, ThreadID: {Thread.CurrentThread.ManagedThreadId}");
+                    //Task<int> task = Task.Factory.StartNew<int>
+                    //    (() => V(model));
+                    Task.Run(() => { V(model); });
                 }
             }).Start();
 
-            new Thread(() =>
-            {
-                while (true)
-                {
-                    int model;
-                    lock (_locker)
-                    {
-                        while (!queue.TryDequeue(out model))
-                        {
-                            Monitor.Wait(_locker);
-                            Console.WriteLine("线程ID: " + Thread.CurrentThread.ManagedThreadId + " waiting");
-                        }
-                    }
-                    Console.WriteLine($"value: {model}, queueCount: {queue.Count}");
-                    Thread.Sleep(2000);
-                }
-            }).Start();
+            //new Thread(() =>
+            //{
+            //    while (true)
+            //    {
+            //        int model;
+            //        lock (_locker)
+            //        {
+            //            while (!queue.TryDequeue(out model))
+            //            {
+            //                Monitor.Wait(_locker);
+            //                Console.WriteLine("线程ID: " + Thread.CurrentThread.ManagedThreadId + " waiting");
+            //            }
+            //        }
+            //        Console.WriteLine($"value: {model}, queueCount: {queue.Count}");
+            //        Thread.Sleep(2000);
+            //    }
+            //}).Start();
 
-            new Thread(() =>
-            {
-                while (true)
-                {
-                    int model;
-                    lock (_locker)
-                    {
-                        while (!queue.TryDequeue(out model))
-                        {
-                            Monitor.Wait(_locker);
-                            Console.WriteLine("线程ID: " + Thread.CurrentThread.ManagedThreadId + " waiting");
-                        }
-                    }
-                    Console.WriteLine($"value: {model}, queueCount: {queue.Count}");
-                    Thread.Sleep(2000);
-                }
-            }).Start();
+            //new Thread(() =>
+            //{
+            //    while (true)
+            //    {
+            //        int model;
+            //        lock (_locker)
+            //        {
+            //            while (!queue.TryDequeue(out model))
+            //            {
+            //                Monitor.Wait(_locker);
+            //                Console.WriteLine("线程ID: " + Thread.CurrentThread.ManagedThreadId + " waiting");
+            //            }
+            //        }
+            //        Console.WriteLine($"value: {model}, queueCount: {queue.Count}");
+            //        Thread.Sleep(2000);
+            //    }
+            //}).Start();
 
             //Console.WriteLine("Hello World!");
             Console.ReadKey();
+        }
+
+        private static int V(int i)
+        {
+            Thread.Sleep(2000);
+            Console.WriteLine($"value: {i}, queueCount: {queue.Count}, ThreadID: {Thread.CurrentThread.ManagedThreadId}");
+            return i;
+        }
+
+        private static async Task<int> VAsync(int i)
+        {
+            Thread.Sleep(2000);
+            Console.WriteLine($"value: {i}, queueCount: {queue.Count}, ThreadID: {Thread.CurrentThread.ManagedThreadId}");
+            return i;
         }
     }
 }
