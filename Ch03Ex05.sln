@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch04Ex18", "Ch04Ex18\Ch04Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadLibrary", "QuadLibrary\QuadLibrary.csproj", "{9FDE3CD3-C1BF-48BB-99E9-217E49F41726}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch05Ex01", "Ch05Ex01\Ch05Ex01.csproj", "{99548455-EFBA-4CB5-9387-39B3AE4165E4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch05Ex02", "Ch05Ex02\Ch05Ex02.csproj", "{D40FDCFE-001F-4A92-9EFE-48BDB311E0E8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch04Ex16", "Ch04Ex16\Ch04Ex16.csproj", "{64DB432D-8F3C-4466-A9E1-695FC146836D}"
@@ -205,7 +203,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "回调Test", "回调Test\回调Test.csproj", "{8C7C31F6-B7A8-4A6A-8C51-0E984E357B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "匿名函数Test", "匿名函数Test\匿名函数Test.csproj", "{6051719D-CEA8-42E6-88D7-F2CB559A7B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "匿名函数Test", "匿名函数Test\匿名函数Test.csproj", "{6051719D-CEA8-42E6-88D7-F2CB559A7B47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,10 +247,6 @@ Global
 		{9FDE3CD3-C1BF-48BB-99E9-217E49F41726}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FDE3CD3-C1BF-48BB-99E9-217E49F41726}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FDE3CD3-C1BF-48BB-99E9-217E49F41726}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99548455-EFBA-4CB5-9387-39B3AE4165E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99548455-EFBA-4CB5-9387-39B3AE4165E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99548455-EFBA-4CB5-9387-39B3AE4165E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99548455-EFBA-4CB5-9387-39B3AE4165E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D40FDCFE-001F-4A92-9EFE-48BDB311E0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D40FDCFE-001F-4A92-9EFE-48BDB311E0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D40FDCFE-001F-4A92-9EFE-48BDB311E0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -621,7 +615,6 @@ Global
 		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Release|Any CPU.Build.0 = Release|Any CPU
-
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
