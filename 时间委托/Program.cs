@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Threading;
+
 namespace 事件委托
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private delegate void MyDel(string name);
+
+        private static void Main(string[] args)
         {
             shuixiang shuixiang1 = new shuixiang(10);
             jiashuiqi jiashuiqi1 = new jiashuiqi();
@@ -12,6 +15,14 @@ namespace 事件委托
             shuixiang1.shuixiangkong += jiashuiqi1.jiashui;
             shuixiang1.shuixiangkong += jingbaoqi1.baojing;
             //shuixiang1.tiji = 10;
+            MyDel myDel = new MyDel(SayHello);
+            MyDel myDel1 = SayHello;
+            MyDel chain = null;
+            chain += myDel;
+            chain += myDel1;
+            //myDel("hello");
+            //myDel1("hello11");
+            chain("a");
             while (true)
             {
                 Thread.Sleep(1000);
@@ -24,6 +35,11 @@ namespace 事件委托
                 }
             }
         }
+
+        private static void SayHello(string name)
+        {
+            Console.WriteLine(name);
+        }
     }
 
     public class shuixiang
@@ -32,14 +48,26 @@ namespace 事件委托
         {
             tiji = v;
         }
-        public void fangshui() { tiji -= 1; Console.WriteLine($"水量-1  当前水量{tiji}"); }
-        public void jiashui() { tiji = 10; Console.WriteLine($"老子给你加满水哦.{tiji}"); }
+
+        public void fangshui()
+        {
+            tiji -= 1; Console.WriteLine($"水量-1  当前水量{tiji}");
+        }
+
+        public void jiashui()
+        {
+            tiji = 10; Console.WriteLine($"老子给你加满水哦.{tiji}");
+        }
+
         public double tiji;
+
         public event EventHandler shuixiangkong;
+
         public void shuixiangkongle()
         {
             shuixiangkong(this, new EventArgs());
         }
+
         ~shuixiang()
         {
             Console.WriteLine("水箱呗扔了");
