@@ -197,7 +197,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "线程通信Test", "线程�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "线程通知机制Test2", "线程通知机制Test2\线程通知机制Test2.csproj", "{C140784B-3019-4F47-8418-10347048F715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "文件变化监控Test", "文件变化监控Test\文件变化监控Test.csproj", "{F9FAC659-0ADB-4DC5-AED7-1182E1667C78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "文件变化监控Test", "文件变化监控Test\文件变化监控Test.csproj", "{F9FAC659-0ADB-4DC5-AED7-1182E1667C78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PICTest", "PICTest\PICTest.csproj", "{3535B814-4C30-4E49-8074-80F0F228AD15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{C2B73B81-4B02-4FC6-BC41-155B9229ADD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "回调Test", "回调Test\回调Test.csproj", "{8C7C31F6-B7A8-4A6A-8C51-0E984E357B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "匿名函数Test", "匿名函数Test\匿名函数Test.csproj", "{6051719D-CEA8-42E6-88D7-F2CB559A7B47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -597,6 +605,22 @@ Global
 		{F9FAC659-0ADB-4DC5-AED7-1182E1667C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9FAC659-0ADB-4DC5-AED7-1182E1667C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9FAC659-0ADB-4DC5-AED7-1182E1667C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3535B814-4C30-4E49-8074-80F0F228AD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3535B814-4C30-4E49-8074-80F0F228AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3535B814-4C30-4E49-8074-80F0F228AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3535B814-4C30-4E49-8074-80F0F228AD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B73B81-4B02-4FC6-BC41-155B9229ADD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B73B81-4B02-4FC6-BC41-155B9229ADD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B73B81-4B02-4FC6-BC41-155B9229ADD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B73B81-4B02-4FC6-BC41-155B9229ADD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7C31F6-B7A8-4A6A-8C51-0E984E357B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7C31F6-B7A8-4A6A-8C51-0E984E357B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7C31F6-B7A8-4A6A-8C51-0E984E357B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7C31F6-B7A8-4A6A-8C51-0E984E357B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6051719D-CEA8-42E6-88D7-F2CB559A7B47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
