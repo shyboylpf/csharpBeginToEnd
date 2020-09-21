@@ -7,11 +7,11 @@ using StackExchange.Redis;
 
 namespace redis_client
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("192.168.0.20");
+            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("192.168.1.217");
 
             IDatabase db = redis.GetDatabase();
             string value = "abcdefg";
@@ -27,24 +27,26 @@ namespace redis_client
 
             ISubscriber sub = redis.GetSubscriber();
             sub.Publish("messages", "hello");
-            sub.Subscribe("messages",(channel,message)=> {
+            sub.Subscribe("messages", (channel, message) =>
+            {
                 Console.WriteLine((string)message);
             });
-            for(int i=0;i<100;i++)
-            Console.WriteLine(incrVideoCounter(db,101));
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(incrVideoCounter(db, 101));
+            }
             //rateLimit(db,"");
-
         }
 
-        static long incrVideoCounter(IDatabase db, long id)
+        private static long incrVideoCounter(IDatabase db, long id)
         {
             string key = "video:playCount:" + id;
             return db.StringIncrement(key);
         }
 
-        static bool rateLimit(IDatabase db, string phoneNum)
+        private static bool rateLimit(IDatabase db, string phoneNum)
         {
-            phoneNum = "18354276712";
+            phoneNum = "18354271111";
             string key = "shortMsg:limit:" + phoneNum;
             db.StringSet(key, 1, new TimeSpan(50));
             return true;

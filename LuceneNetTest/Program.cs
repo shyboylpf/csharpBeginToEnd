@@ -15,7 +15,7 @@ namespace LuceneNetTest
             // Ensures index backwards compatibility
             var AppLuceneVersion = LuceneVersion.LUCENE_48;
 
-            var indexLocation = @"C:\Index";
+            var indexLocation = @"Index";
             var dir = FSDirectory.Open(indexLocation);
 
             //create an analyzer to process the text
