@@ -217,7 +217,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "X509Test", "X509Test\X509Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "谷歌翻译", "谷歌翻译\谷歌翻译.csproj", "{71BDB8E8-06C9-49D8-AA8F-D57421551400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionApp1", "AzureFunctionApp1\AzureFunctionApp1.csproj", "{41372BD8-E558-4CE1-B2FB-18F9AF91FD87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionApp1", "AzureFunctionApp1\AzureFunctionApp1.csproj", "{41372BD8-E558-4CE1-B2FB-18F9AF91FD87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearch", "ElasticSearch\ElasticSearch.csproj", "{419BE083-583F-4F2F-AD2E-0D5F6AE9352F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchImportFromFile", "ElasticSearchImportFromFile\ElasticSearchImportFromFile.csproj", "{D0619F3B-8C73-433F-B161-7954CE4E620E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchQuery", "ElasticSearchQuery\ElasticSearchQuery.csproj", "{704A0E54-75A4-48AD-8C99-587196E7DD5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -657,6 +663,18 @@ Global
 		{41372BD8-E558-4CE1-B2FB-18F9AF91FD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41372BD8-E558-4CE1-B2FB-18F9AF91FD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41372BD8-E558-4CE1-B2FB-18F9AF91FD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419BE083-583F-4F2F-AD2E-0D5F6AE9352F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419BE083-583F-4F2F-AD2E-0D5F6AE9352F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419BE083-583F-4F2F-AD2E-0D5F6AE9352F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419BE083-583F-4F2F-AD2E-0D5F6AE9352F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0619F3B-8C73-433F-B161-7954CE4E620E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0619F3B-8C73-433F-B161-7954CE4E620E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0619F3B-8C73-433F-B161-7954CE4E620E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0619F3B-8C73-433F-B161-7954CE4E620E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704A0E54-75A4-48AD-8C99-587196E7DD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704A0E54-75A4-48AD-8C99-587196E7DD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704A0E54-75A4-48AD-8C99-587196E7DD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704A0E54-75A4-48AD-8C99-587196E7DD5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
