@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 /ElasticSearch/Models/Generated/Database.cs
 /ElasticSearch/App.config
+/restfulApi/appsettings.json
