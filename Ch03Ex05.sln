@@ -225,7 +225,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchImportFromFile
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchQuery", "ElasticSearchQuery\ElasticSearchQuery.csproj", "{704A0E54-75A4-48AD-8C99-587196E7DD5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restfulApi", "restfulApi\restfulApi.csproj", "{F142BF95-466F-4DD2-B4FA-895496710F7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restfulApi", "restfulApi\restfulApi.csproj", "{F142BF95-466F-4DD2-B4FA-895496710F7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csredis-client", "csredis-client\csredis-client.csproj", "{F83224C9-0943-4361-9876-8434A358E06A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -681,6 +683,10 @@ Global
 		{F142BF95-466F-4DD2-B4FA-895496710F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F142BF95-466F-4DD2-B4FA-895496710F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F142BF95-466F-4DD2-B4FA-895496710F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83224C9-0943-4361-9876-8434A358E06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83224C9-0943-4361-9876-8434A358E06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83224C9-0943-4361-9876-8434A358E06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83224C9-0943-4361-9876-8434A358E06A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

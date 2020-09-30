@@ -14,11 +14,13 @@ namespace redis_client
             ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("192.168.1.217");
 
             IDatabase db = redis.GetDatabase();
-            string value = "abcdefg";
-            db.StringSet("mykey", value);
-
-            value = db.StringGet("mykey");
-            Console.WriteLine(value);
+            //string value = "abcdefg";
+            //db.StringSet("mykey", value);
+            if (db.KeyExists("mykey"))
+            {
+                var value = db.StringGet("mykey");
+                Console.WriteLine(value);
+            }
 
             byte[] key = Encoding.ASCII.GetBytes("mybytekey");
             byte[] value2 = Encoding.ASCII.GetBytes("mybytevalue");
