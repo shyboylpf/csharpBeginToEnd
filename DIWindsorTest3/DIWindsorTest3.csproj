@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interceptor.cs" />
+    <Compile Include="Interceptor2.cs" />
     <Compile Include="ITargetClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
