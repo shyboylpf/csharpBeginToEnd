@@ -229,6 +229,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "restfulApi", "restfulApi\re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csredis-client", "csredis-client\csredis-client.csproj", "{F83224C9-0943-4361-9876-8434A358E06A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ocelotTest", "ocelotTest\ocelotTest.csproj", "{1A36253C-BF8D-4D9A-95EF-1D5C88032B89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -687,6 +689,10 @@ Global
 		{F83224C9-0943-4361-9876-8434A358E06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F83224C9-0943-4361-9876-8434A358E06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F83224C9-0943-4361-9876-8434A358E06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A36253C-BF8D-4D9A-95EF-1D5C88032B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A36253C-BF8D-4D9A-95EF-1D5C88032B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A36253C-BF8D-4D9A-95EF-1D5C88032B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A36253C-BF8D-4D9A-95EF-1D5C88032B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
