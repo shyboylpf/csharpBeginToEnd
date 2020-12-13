@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="readme.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="readme.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ocelot" Version="16.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ocelot.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
