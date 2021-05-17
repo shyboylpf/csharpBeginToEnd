@@ -14,7 +14,8 @@ namespace JsonConfigrueTest
         {
             var builder = new ConfigurationBuilder()
                         .SetBasePath(Directory.GetCurrentDirectory())
-                        .AddJsonFile("appsettings.json");
+                        .AddJsonFile("appsettings.json")
+                        .AddJsonFile($"appsettings.{Environment.MachineName}.json", true);
             var config = builder.Build();
 
             HIKDirectory = config["HIKMotionDetectionService:HIKDirectory"]; // 配置键
