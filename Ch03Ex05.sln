@@ -254,7 +254,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceClient", "WcfServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp4", "ConsoleApp4\ConsoleApp4.csproj", "{523405C2-7BBE-40FE-BF7C-52F7F78B0C68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAATestEverything", "AAATestEverything\AAATestEverything.csproj", "{DA4C1605-AA74-42D5-9391-7C13DACE43DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAATestEverything", "AAATestEverything\AAATestEverything.csproj", "{DA4C1605-AA74-42D5-9391-7C13DACE43DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumlogicTest", "SumlogicTest\SumlogicTest.csproj", "{C7D3DC3F-E20C-4C12-AE54-03EDD48B077D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -762,6 +764,10 @@ Global
 		{DA4C1605-AA74-42D5-9391-7C13DACE43DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4C1605-AA74-42D5-9391-7C13DACE43DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4C1605-AA74-42D5-9391-7C13DACE43DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D3DC3F-E20C-4C12-AE54-03EDD48B077D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D3DC3F-E20C-4C12-AE54-03EDD48B077D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D3DC3F-E20C-4C12-AE54-03EDD48B077D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D3DC3F-E20C-4C12-AE54-03EDD48B077D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
