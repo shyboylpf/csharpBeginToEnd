@@ -258,7 +258,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAATestEverything", "AAATes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumlogicTest", "SumlogicTest\SumlogicTest.csproj", "{C7D3DC3F-E20C-4C12-AE54-03EDD48B077D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAAWebApplicationTestEverything", "AAAWebApplicationTestEverything\AAAWebApplicationTestEverything.csproj", "{E01C6B54-71B3-4EA6-9676-C2258AE6E6A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAAWebApplicationTestEverything", "AAAWebApplicationTestEverything\AAAWebApplicationTestEverything.csproj", "{E01C6B54-71B3-4EA6-9676-C2258AE6E6A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCancelTimeout", "TaskCancelTimeout\TaskCancelTimeout.csproj", "{A5F81622-E54C-4AF4-BEDF-714BF03FF405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -774,6 +776,10 @@ Global
 		{E01C6B54-71B3-4EA6-9676-C2258AE6E6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E01C6B54-71B3-4EA6-9676-C2258AE6E6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E01C6B54-71B3-4EA6-9676-C2258AE6E6A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F81622-E54C-4AF4-BEDF-714BF03FF405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F81622-E54C-4AF4-BEDF-714BF03FF405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F81622-E54C-4AF4-BEDF-714BF03FF405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F81622-E54C-4AF4-BEDF-714BF03FF405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

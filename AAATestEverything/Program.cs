@@ -22,6 +22,13 @@ namespace AAATestEverything
 
         private static void Main(string[] args)
         {
+            var items = GenInts();
+            if (items.Any())
+                foreach (var item in GenInts())
+                {
+                    Console.WriteLine(item);
+                }
+
             DateTime now = DateTime.UtcNow;
             DateTime now2 = now;
             now2 = DateTime.SpecifyKind(now2, DateTimeKind.Local);
@@ -41,6 +48,14 @@ namespace AAATestEverything
             //Enumerable.Range(0, 100).ToList().ForEach(x => keyValuePairs[x] = "1");
             //Console.WriteLine(keyValuePairs.Keys.Count);
             //Console.WriteLine("Hello World!");
+        }
+
+        private static IEnumerable<int> GenInts()
+        {
+            for (var i = 0; i < 5; i++)
+            {
+                yield return i;
+            }
         }
     }
 }
