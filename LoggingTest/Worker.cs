@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using LoggingTest;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-internal class Worker : BackgroundService
+internal class Worker : IHostedService
 {
     private ILogger _logger;
 
@@ -15,40 +16,57 @@ internal class Worker : BackgroundService
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        _logger.LogInformation("11111111111from startt");
-    }
-
-    public Task StopAsync(CancellationToken cancellationToken)
-    {
-        _logger.LogInformation("2222222222222");
-        return Task.CompletedTask;
-    }
-
-    protected override Task ExecuteAsync(CancellationToken stoppingToken)
-    {
+        _logger.LogInformation("Worker.StartAsync");
         try
         {
-            while (!stoppingToken.IsCancellationRequested)
+            while (!cancellationToken.IsCancellationRequested)
             {
-                Thread.SpinWait(10500000);
-                _logger.LogInformation("11111111111for execute");
+                await Task.Delay(1000, cancellationToken);
+                _logger.LogInformation("Worker.Running");
             }
         }
         catch (OperationCanceledException ex)
         {
-            if (ex.CancellationToken == stoppingToken)
+            if (ex.CancellationToken == cancellationToken)
             {
-                _logger.LogWarning("cancel from ctrl c");
+                _logger.LogWarning("Worker cannceled");
             }
         }
-        catch (AggregateException ae)
-        {
-            _logger.LogWarning("AggregateException caught: " + ae.InnerException);
-            foreach (var inner in ae.InnerExceptions)
-            {
-                _logger.LogWarning(inner.Message + inner.Source);
-            }
-        }
+        //return Task.CompletedTask;
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        _logger.LogInformation("Worker.StopAsync");
         return Task.CompletedTask;
     }
+
+    //protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    //{
+    //    _logger.LogInformation("11111111111from ExecuteAsync");
+    //    //try
+    //    //{
+    //    //    while (!stoppingToken.IsCancellationRequested)
+    //    //    {
+    //    //        Thread.SpinWait(10500000);
+    //    //        _logger.LogInformation("11111111111for execute");
+    //    //    }
+    //    //}
+    //    //catch (OperationCanceledException ex)
+    //    //{
+    //    //    if (ex.CancellationToken == stoppingToken)
+    //    //    {
+    //    //        _logger.LogWarning("cancel from ctrl c");
+    //    //    }
+    //    //}
+    //    //catch (AggregateException ae)
+    //    //{
+    //    //    _logger.LogWarning("AggregateException caught: " + ae.InnerException);
+    //    //    foreach (var inner in ae.InnerExceptions)
+    //    //    {
+    //    //        _logger.LogWarning(inner.Message + inner.Source);
+    //    //    }
+    //    //}
+    //    return Task.CompletedTask;
+    //}
 }
