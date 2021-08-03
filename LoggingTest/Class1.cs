@@ -10,16 +10,21 @@ namespace LoggingTest
 {
     internal class Class1 : IClass1
     {
-        public ILogger logger;
+        private readonly ILogger logger;
 
-        public Class1(ILogger<Class1> logger)
+        private readonly TransientFaultHandlingOptions _options;
+
+        public Class1(ILogger<Class1> logger, IOptions<TransientFaultHandlingOptions> options)
         {
             this.logger = logger;
+            _options = options.Value;
         }
 
         public void Run()
         {
             logger.LogInformation("Class1.Run");
+            logger.LogInformation($"TransientFaultHandlingOptions.Enabled={_options.Enabled}");
+            logger.LogInformation($"TransientFaultHandlingOptions.AutoRetryDelay={_options.AutoRetryDelay}");
         }
     }
 }
