@@ -99,15 +99,10 @@ namespace LoggingTest
                 .UseSerilog((hostContext, config) =>
                 {
                     config.Enrich.FromLogContext()
-                        //.Enrich.WithProperty("IPAddress", hostContext. .RemoteIpAddress)
+                        .Enrich.WithMachineName()
                         .WriteTo.Console()
-                        .WriteTo.SumoLogic("https://endpoint1.collection.us2.sumologic.com/receiver/v1/example", "xGlobalETF-Pusher");
+                        .WriteTo.SumoLogic(hostContext.Configuration.GetSection("SumologicEndpoint")["endpointUrl"], hostContext.Configuration.GetSection("SumologicEndpoint")["sourceName"]);
                 })
-            //.ConfigureLogging((hostingContext, logging) =>
-            //{
-            //    logging
-            //        .AddConsole();
-            //})
             ;
     }
 }
