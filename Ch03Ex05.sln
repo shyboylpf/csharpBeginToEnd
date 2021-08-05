@@ -264,7 +264,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskCancelTimeout", "TaskCa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqToSql", "LinqToSql\LinqToSql.csproj", "{45B5814C-CD44-4CCE-B3B5-3D1FB8BF8C57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingTest", "LoggingTest\LoggingTest.csproj", "{791F6806-F7A6-4DEB-AB2D-CBD1B62B7D30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingTest", "LoggingTest\LoggingTest.csproj", "{791F6806-F7A6-4DEB-AB2D-CBD1B62B7D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPoolTest", "ObjectPoolTest\ObjectPoolTest.csproj", "{81D7557B-0222-40CB-88AC-553466742159}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -792,6 +794,10 @@ Global
 		{791F6806-F7A6-4DEB-AB2D-CBD1B62B7D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{791F6806-F7A6-4DEB-AB2D-CBD1B62B7D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{791F6806-F7A6-4DEB-AB2D-CBD1B62B7D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D7557B-0222-40CB-88AC-553466742159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D7557B-0222-40CB-88AC-553466742159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D7557B-0222-40CB-88AC-553466742159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D7557B-0222-40CB-88AC-553466742159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
