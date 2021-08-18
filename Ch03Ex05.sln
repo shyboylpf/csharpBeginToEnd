@@ -270,9 +270,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectPoolTest", "ObjectPoo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{0B916C35-8687-43D2-8503-6BC1C5DC0E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPatchTest", "JsonPatchTest\JsonPatchTest.csproj", "{331AEA60-B253-48B9-B5F1-CBAB1AD413F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonPatchTest", "JsonPatchTest\JsonPatchTest.csproj", "{331AEA60-B253-48B9-B5F1-CBAB1AD413F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSentEventTest", "ServerSentEventTest\ServerSentEventTest.csproj", "{28131072-0883-46E0-8A51-5C9F0D307024}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerSentEventTest", "ServerSentEventTest\ServerSentEventTest.csproj", "{28131072-0883-46E0-8A51-5C9F0D307024}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.ServerSentEvents", "Lib.AspNetCore.ServerSentEvents\Lib.AspNetCore.ServerSentEvents.csproj", "{0701C9C4-66DE-495A-BA5E-FAD9D5CCF57F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -816,6 +818,10 @@ Global
 		{28131072-0883-46E0-8A51-5C9F0D307024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28131072-0883-46E0-8A51-5C9F0D307024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28131072-0883-46E0-8A51-5C9F0D307024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0701C9C4-66DE-495A-BA5E-FAD9D5CCF57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0701C9C4-66DE-495A-BA5E-FAD9D5CCF57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0701C9C4-66DE-495A-BA5E-FAD9D5CCF57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0701C9C4-66DE-495A-BA5E-FAD9D5CCF57F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,10 +6,13 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
-    <PackageReference Include="Lib.AspNetCore.ServerSentEvents" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib.AspNetCore.ServerSentEvents\Lib.AspNetCore.ServerSentEvents.csproj" />
   </ItemGroup>
 </Project>
