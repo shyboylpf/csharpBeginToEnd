@@ -19,15 +19,18 @@ namespace Lib.AspNetCore.ServerSentEvents
     public class ServerSentEventsMiddleware<TServerSentEventsService> where TServerSentEventsService : ServerSentEventsService
     {
         #region Fields
+
         private readonly RequestDelegate _next;
         private readonly IAuthorizationPolicyProvider _policyProvider;
         private readonly TServerSentEventsService _serverSentEventsService;
         private readonly ServerSentEventsOptions _serverSentEventsOptions;
 
         private AuthorizationPolicy _authorizationPolicy;
-        #endregion
+
+        #endregion Fields
 
         #region Constructor
+
         /// <summary>
         /// Initializes new instance of middleware.
         /// </summary>
@@ -42,9 +45,11 @@ namespace Lib.AspNetCore.ServerSentEvents
             _serverSentEventsService = serverSentEventsService ?? throw new ArgumentNullException(nameof(serverSentEventsService));
             _serverSentEventsOptions = serverSentEventsOptions?.Value ?? throw new ArgumentNullException(nameof(serverSentEventsOptions));
         }
-        #endregion
+
+        #endregion Constructor
 
         #region Methods
+
         /// <summary>
         /// Process an individual request.
         /// </summary>
@@ -53,7 +58,7 @@ namespace Lib.AspNetCore.ServerSentEvents
         /// <returns>The task object representing the asynchronous operation.</returns>
         public async Task Invoke(HttpContext context, IPolicyEvaluator policyEvaluator)
         {
-            if (CheckAcceptHeader(context.Request.Headers))
+            if (!CheckAcceptHeader(context.Request.Headers))
             {
                 if (!await AuthorizeAsync(context, policyEvaluator))
                 {
@@ -225,6 +230,7 @@ namespace Lib.AspNetCore.ServerSentEvents
 
             await _serverSentEventsService.OnDisconnectAsync(request, client);
         }
-        #endregion
+
+        #endregion Methods
     }
 }
