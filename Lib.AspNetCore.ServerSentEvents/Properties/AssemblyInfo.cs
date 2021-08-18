@@ -1,0 +1,2 @@
+﻿[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Test.AspNetCore.ServerSentEvents")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Benchmark.AspNetCore.ServerSentEvents")]
