@@ -58,7 +58,7 @@ namespace Lib.AspNetCore.ServerSentEvents
         /// <returns>The task object representing the asynchronous operation.</returns>
         public async Task Invoke(HttpContext context, IPolicyEvaluator policyEvaluator)
         {
-            if (!CheckAcceptHeader(context.Request.Headers))
+            if (CheckAcceptHeader(context.Request.Headers))
             {
                 if (!await AuthorizeAsync(context, policyEvaluator))
                 {
