@@ -5,7 +5,7 @@
     <VersionPrefix>6.0.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     <Authors>Tomasz Pęczek</Authors>
-    <TargetFrameworks>netcoreapp2.1;netcoreapp3.1;net5.0;net461</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
     <AssemblyTitle>Lib.AspNetCore.ServerSentEvents</AssemblyTitle>
     <AssemblyName>Lib.AspNetCore.ServerSentEvents</AssemblyName>
     <PackageId>Lib.AspNetCore.ServerSentEvents</PackageId>
