@@ -1,7 +1,10 @@
+using Demo.AspNetCore.ServerSentEvents.Services;
+using Lib.AspNetCore.ServerSentEvents;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +29,22 @@ namespace ServerSentEventTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Register default ServerSentEventsService.
+            services.AddServerSentEvents();
+
+            // Registers custom ServerSentEventsService which will be used by second middleware, otherwise they would end up sharing connected users.
+            services.AddServerSentEvents<INotificationsServerSentEventsService, NotificationsServerSentEventsService>(options =>
+            {
+                options.ReconnectInterval = 5000;
+            });
+
+            services.AddSingleton<IHostedService, HeartbeatService>();
+            services.AddNotificationsService(Configuration);
+
+            services.AddResponseCompression(options =>
+            {
+                options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "text/event-stream" });
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -47,10 +66,13 @@ namespace ServerSentEventTest
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
+                // Set up first Server-Sent Events endpoint.
+                endpoints.MapServerSentEvents("/see-heartbeat");
+
+                // Set up second (separated) Server-Sent Events endpoint.
+                endpoints.MapServerSentEvents<NotificationsServerSentEventsService>("/sse-notifications");
                 endpoints.MapControllers();
             });
         }

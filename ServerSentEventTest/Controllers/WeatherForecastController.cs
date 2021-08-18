@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Demo.AspNetCore.ServerSentEvents.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace ServerSentEventTest.Controllers
     [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
     {
+        private INotificationsService _notificationsService;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -20,9 +23,10 @@ namespace ServerSentEventTest.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, INotificationsService notificationsService)
         {
             _logger = logger;
+            _notificationsService = notificationsService;
         }
 
         [HttpGet]
@@ -54,6 +58,12 @@ namespace ServerSentEventTest.Controllers
                     await Task.Delay(1000);
                 }
             }
+        }
+
+        [HttpGet]
+        public async Task Notification()
+        {
+            await _notificationsService.SendNotificationAsync("11111111111111", false);
         }
     }
 }
