@@ -1,4 +1,5 @@
 ﻿using Demo.AspNetCore.ServerSentEvents.Services;
+using Lib.AspNetCore.ServerSentEvents;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -15,6 +16,7 @@ namespace ServerSentEventTest.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private INotificationsService _notificationsService;
+        private IServerSentEventsService _serverSentEventsService;
 
         private static readonly string[] Summaries = new[]
         {
@@ -23,10 +25,14 @@ namespace ServerSentEventTest.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, INotificationsService notificationsService)
+        public WeatherForecastController(
+            ILogger<WeatherForecastController> logger,
+            INotificationsService notificationsService,
+            IServerSentEventsService serverSentEventsService)
         {
             _logger = logger;
             _notificationsService = notificationsService;
+            _serverSentEventsService = serverSentEventsService;
         }
 
         [HttpGet]
@@ -63,6 +69,7 @@ namespace ServerSentEventTest.Controllers
         [HttpGet]
         public async Task Notification()
         {
+            await _serverSentEventsService.GetClients().FirstOrDefault()?.SendEventAsync("2222222222222222");
             await _notificationsService.SendNotificationAsync("11111111111111", false);
         }
     }
