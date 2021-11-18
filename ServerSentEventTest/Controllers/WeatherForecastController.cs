@@ -16,7 +16,6 @@ namespace ServerSentEventTest.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private INotificationsService _notificationsService;
-        private IServerSentEventsService _serverSentEventsService;
 
         private static readonly string[] Summaries = new[]
         {
@@ -27,12 +26,10 @@ namespace ServerSentEventTest.Controllers
 
         public WeatherForecastController(
             ILogger<WeatherForecastController> logger,
-            INotificationsService notificationsService,
-            IServerSentEventsService serverSentEventsService)
+            INotificationsService notificationsService)
         {
             _logger = logger;
             _notificationsService = notificationsService;
-            _serverSentEventsService = serverSentEventsService;
         }
 
         [HttpGet]
@@ -69,8 +66,7 @@ namespace ServerSentEventTest.Controllers
         [HttpGet]
         public async Task Notification()
         {
-            await _serverSentEventsService.GetClients().FirstOrDefault()?.SendEventAsync("2222222222222222");
-            await _notificationsService.SendNotificationAsync("11111111111111", false);
+            await _notificationsService.SendNotificationAsync("11111111111111\r\n22222222\r\n", false);
         }
     }
 }
