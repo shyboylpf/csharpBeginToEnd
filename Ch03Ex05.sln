@@ -276,7 +276,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerSentEventTest", "Serv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib.AspNetCore.ServerSentEvents", "Lib.AspNetCore.ServerSentEvents\Lib.AspNetCore.ServerSentEvents.csproj", "{0701C9C4-66DE-495A-BA5E-FAD9D5CCF57F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolTest", "ThreadPoolTest\ThreadPoolTest.csproj", "{ECF50FA3-533B-4299-8489-B873B7727853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPoolTest", "ThreadPoolTest\ThreadPoolTest.csproj", "{ECF50FA3-533B-4299-8489-B873B7727853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIDecorateTest", "DIDecorateTest\DIDecorateTest.csproj", "{3AB2E18B-4B73-4B5E-9D03-352EE8A326C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -828,6 +830,10 @@ Global
 		{ECF50FA3-533B-4299-8489-B873B7727853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF50FA3-533B-4299-8489-B873B7727853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF50FA3-533B-4299-8489-B873B7727853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB2E18B-4B73-4B5E-9D03-352EE8A326C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB2E18B-4B73-4B5E-9D03-352EE8A326C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB2E18B-4B73-4B5E-9D03-352EE8A326C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB2E18B-4B73-4B5E-9D03-352EE8A326C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
