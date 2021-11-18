@@ -263,3 +263,4 @@ __pycache__/
 /ElasticSearch/App.config
 /restfulApi/appsettings.json
 LoggingTest/appsettings.json
+ServerSentEventTest/appsettings.Development.json
