@@ -280,7 +280,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPoolTest", "ThreadPoo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIDecorateTest", "DIDecorateTest\DIDecorateTest.csproj", "{3AB2E18B-4B73-4B5E-9D03-352EE8A326C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsciiTest", "AsciiTest\AsciiTest.csproj", "{DF1D5337-8AA7-45B6-93E0-609B909CA47B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsciiTest", "AsciiTest\AsciiTest.csproj", "{DF1D5337-8AA7-45B6-93E0-609B909CA47B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeIndexer", "RangeIndexer\RangeIndexer.csproj", "{F0722026-A0CC-43A0-9DBE-D126F578A152}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -840,6 +842,10 @@ Global
 		{DF1D5337-8AA7-45B6-93E0-609B909CA47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF1D5337-8AA7-45B6-93E0-609B909CA47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF1D5337-8AA7-45B6-93E0-609B909CA47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0722026-A0CC-43A0-9DBE-D126F578A152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0722026-A0CC-43A0-9DBE-D126F578A152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0722026-A0CC-43A0-9DBE-D126F578A152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0722026-A0CC-43A0-9DBE-D126F578A152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
